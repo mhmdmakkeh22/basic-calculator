@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.display {
+  grid-column: span 4;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.operator {
+  background-color: #FFA500;
+}
+
+.equals {
+  background-color: #008CBA;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
